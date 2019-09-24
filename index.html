@@ -1,0 +1,369 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.js"></script>  
+<script type="text/javascript" src="file:///C|/Users/gregs/Desktop/&lt;a href=&quot;fadeinscroll.js&quot;&gt;fadeinscroll.js&lt;/a&gt;"></script>
+
+
+<script type="text/javascript">
+  jQuery(document).ready(function($) {
+    $(".scroll").click(function(event) {
+    event.preventDefault();
+    $('html,body').animate( { scrollTop:$(this.hash).offset().top } , 1000);
+    } );
+  } );
+</script>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+<script>
+  $(document).ready(function () {
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+              $('.scrollup').fadeIn();
+          } else {
+              $('.scrollup').fadeOut();
+          }
+      });
+      $('.scrollup').click(function () {
+          $("html, body").animate({
+              scrollTop: 0
+          }, 600);
+          return false;
+      });
+  });
+</script>
+
+
+<script type="text/javascript">
+
+/* fadeincontent */
+
+
+/* Load DIV After Scrollbar Is Moved 100px */
+	$(window).scroll( function() {
+        if ( $(window).scrollTop() > 700 ) {
+           row(); /* calls loadDiv2 Function below */
+        }
+	});
+/* the loadDiv2 function */
+	function row() {
+		$('.row').fadeIn('slow', function() {
+			$(this).fadeTo("slow", 1);
+		});
+	}
+	
+/*Fade Right*/
+	$(document).ready(function(){
+    $(".fade-right").animate({left:200, opacity:"show"}, 1500);
+}); $(window).scroll( function() {
+        if ( $(window).scrollTop() > 700 ) {
+           row(); /* calls loadDiv2 Function below */
+        }
+	});
+/* the loadDiv2 function */
+	function row() {
+		$('.row').fadeIn('slow', function() {
+			$(this).fadeTo("slow", 4);
+		});
+	}
+
+/*Fade Right End*/
+
+	
+/* Scrolling Fade Effect */	
+
+$(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},1000);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
+
+</script>
+
+
+
+
+
+
+
+
+<style>
+
+/* ============================================================
+  Hello! Thank you for your interest in my code! Go ahead and 
+  feel free to take a look and share if you like! Thank you!
+============================================================ */
+
+
+body {margin: 0px;}
+</style>
+
+<link href="styles.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+
+<title>Strudio Web Development and Graphic Design Service</title>
+
+
+<body>
+
+<!--Header Section with Logo-->
+<div id="header">
+<!--NAV-->
+<div id="navwrapper">
+<ul>
+  <li><a href="#home" class="scroll">HOME</a></li>
+  <li><a href="#work" class="scroll">SERVICES</a></li>
+  <li><a href="#aboutus" class="scroll">ABOUT US</a></li>
+  <li><a href="#contactus" class="scroll">CONTACT US</a></li>
+</ul>
+</div>
+<!--END NAV-->
+
+<a name="home" id="home"></a>
+<div class="headerfilterbox"></div>
+  <div class="coolbox slideRight">
+    <h1 class="strudiotextbanner">STRUDIO</h1>
+    <div class="artstripe artstripesmall">
+    <div class="textunderheading1">WEB, VIDEO AND PRINT</div>
+    
+
+   </div>
+    
+
+  </div>
+  
+</div>
+  
+  
+  
+<!--End Header Section with Logo-->
+
+
+<div class="greybar one-edge-shadow"></div>
+
+<!--About Us-->
+
+<a name="aboutus" id="aboutus"></a>
+
+<div class="designsection">
+  <div class="row wireframe leftcolumdescription">
+  	<div class="post-thumb"><img src="Assets/methumb.png" width="289" height="350" alt=""/></div>
+  		<div class="post-conent">
+  		  <h3 class=" textunderheading2">About Strudio
+  		  <p style="font-style:normal; margin-left:-400px; width:1200px;">Hey I'm Greg owner of Strudio! Most of the time it's a one man show but sometimes I need a team for larger more complex projects. We specialize in small business and startups!   
+	      </p></h3>
+	</div>
+        <br />
+   <div class="askforquote askforquotepositionaboutme"><a href="#contactus" class="scroll">Request Quote</a></div>
+
+</div>
+
+
+</div>
+
+<!--End About Us-->
+
+
+
+
+<!--Navigation Middle Section-->
+<a name="work" id="work"></a>
+
+<div class="middlesection">
+<div class="triangle"></div>
+
+
+    <div class=" artstripe artstripesmall "><div class="textunderheading3">Digital Services</div> <div>
+  </div>
+  
+  </div>
+    
+    
+  <div class="boxwrapper">   
+
+   <div class="boxw hvr-fade1"><div class="clickbox"><a href="web.html"></a></div></div>
+   
+   
+   <div class="boxp hvr-fade2"><div class="clickbox"><a href="print.html"></a></div></div>
+   
+   
+   <div class="boxv hvr-fade3"><div class="clickbox"><a href="video.html"></a></div></div>
+   
+   
+   <div class="boxs hvr-fade4"><div class="clickbox"><a href="socialmediamarketing.html"></a></div></div><br />
+   
+</div>
+</div>
+   
+<div class="designsectionwhite">
+  <div class="row wireframe leftcolumdescription">
+  	<div class="post-thumb"><img src="Assets/wireframe.png" width="313" height="316" alt=""/>
+    <div style="text-align:center; margin-left:-65px; padding-top:10px;"><a href="web.html" title="Web Dsign Page" target="new"><h5 style="text-decoration:none;">Samples</h5></a></div></div>
+  		<div class="post-content">
+  			<h3 class="post-titlecolor">Web Design</h3>
+   		  <p style="color:#white; width:550px;">We will listen to your ideas and marketing strategy. Once we know the target audience, we will layout a rough wire frame then tweak it until we get it right.</p>
+   		</div>
+   <div class="askforquote askforquotepositionweb"><a href="#contactus" class="scroll">Request Quote</a></div>
+</div>
+</div>
+
+
+
+<!--Custom Print Section-->
+<a name="Print" id="Print"></a>
+
+<div class="designsectioncolor"><div class="triangle"></div>
+
+  <div class="row wireframe leftcolumdescription">
+  	<div class="post-thumb"><img src="Assets/ROP.jpg" width="300" height="250" alt="ROP" /><a href="print.html" title="Web Dsign Page" target="new"><h5 style="text-decoration:none; text-align:center; margin-left:-50px;">Samples</h5></a></div>
+  		<div class="post-content">
+  			<h3 class="post-titlecolor">Print Design</h3>
+        		<p style="color:#FFF; width:550px">We have years of experience creating brochures, business cards, ROP Ads and just about any print you can imagine.</p>
+   		</div>
+   <div class="askforquote askforquotepositionprint"><a href="#contactus" class="scroll">Request Quote</a></div>
+
+</div>
+
+</div>
+
+<!--End Print Design Section-->
+
+
+<!--Custom Video Section-->
+
+<div class="designsectionvideo">
+<div class="trianglecolornew"></div>
+  <div class="row wireframe leftcolumdescription">
+  	<div class="post-thumb"><img src="Assets/treasurecovemetal.png" width="300" height="300" alt=""/>
+    <div style="text-align:center; padding-top:0px; margin-right:50px;"><a href="video.html" title="Web Dsign Page" target="new"><h5 style="text-decoration:none;">Samples</h5></a></div></div>
+  		<div class="post-content">
+  			<h3 class="post-titlecolor">Video Productions</h3>
+        		<p style="color:#666; width:550px; margin-left:5px;" <p>Video for the web is key. Studies show that more people watch video then read content. Let us create a video for you!</p>
+   		</div>
+   <div class="askforquote askforquotepositionvideo"><a href="#contactus" class="scroll">Request Quote</a></div>
+
+</div>
+
+
+</div>
+<!--End Video Section-->
+
+
+<!--Custom Social Media Section-->
+
+<div class="designsectioncolor"><div class="trianglewhite"></div>
+  <div class="row wireframe leftcolumdescription">
+  	<div class="post-thumb"><img src="Assets/SocialMediaMarketing.png" width="300" height="300" alt="socialmedia" /><div style="text-align:center; margin-left:-65px; padding-top:10px;"><a href="socialmediamarketing.html" title="Web Dsign Page" target="new"><h5 style="text-decoration:none;">Samples</h5></a></div></div>
+  		<div class="post-content">
+  			<h3 class="post-title">Social Media</h3>
+        		<p style="color:#FFF; width:550px;">2015 proved that Social Media is King. With the rising of Facebook, Twitter and Instagram a company simply cannot be competitive without a social media presence. </p>
+   		</div><br/><br/>
+   <div class="askforquote  askforquotepositionsocial"><a href="#contactus" class="scroll">Request Quote</a></div>
+
+</div>
+
+
+</div>
+<!--End Custom Social Media Section-->
+
+
+<!--CONTACT US-->
+
+<a name="contactus" id="contactus"></a>
+<div class="designsectioncontact">
+<div class="trianglecolornew"></div>
+<br />
+
+<div class="emailwrapper">
+
+<!-- www.123contactform.com script begins here -->
+<iframe allowTransparency="true" style="min-height:300px; height:inherit; margin-left:65px; margin-top:50px;" width="100%" id="contactform123" name="contactform123" marginwidth="0" marginheight="0" frameborder="0" src="http://www.123contactform.com/my-contact-form-274336.html">
+<p>Your browser does not support iframes. The contact form cannot be displayed. Please use another contact method (phone, fax etc)</p>
+</iframe>
+
+<!-- www.123contactform.com script ends here -->
+
+
+
+
+</div>
+
+
+
+
+
+</div>
+ 
+<a href="#" class="scrollup">Scroll Up</a>
+
+
+
+<!--End CONTACT US-->
+<div class="greybar one-edge-shadow"></div>
+     
+<div id="footer">
+<div class="strudiologosmall"></div>
+	<div class="fwrapper">
+    
+    
+    		<div class="fcolumright">
+        <ul>
+         <li><strong>SERVICES</strong></li>
+         <li><a href="web.html">Web Development</a></li>
+         <li><a href="video.html">Video Productions</a></li>
+         <li><a href="print.html">Print Design</a></li>
+         <li><a href="socialmediamarketing.html">Social Media</a></li>
+		</ul>
+     	</div>
+    
+		<div class="fcolumleft">
+		<ul>
+  		<li><strong>COMPANY</strong></li>
+  		<li><a href="#contactus" class="scroll">Contact</a></li>
+  		<li><a href="#aboutus" class="scroll">About</a></li>
+		</ul>
+        
+     	</div>
+        
+        		<div class="fcolumlast">
+        <ul>
+         <li><strong>CONNECT</strong></li>
+         <li><a href="https://www.linkedin.com/in/gregstrugach">Linkedin</a></li>
+
+		</ul>
+     	</div>
+            
+            
+            
+            
+        </div>
+         
+         
+         
+	</div>
+
+</body>
+</html>
